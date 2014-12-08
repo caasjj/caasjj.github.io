@@ -38,7 +38,7 @@ paginate_path: "blog/page:num"
 ###############################################################################
 #url: ""
 #baseurl: ""
-url: "caasjj.github.io"
+url: "http://caasjj.github.io"
 baseurl: ""
 #url: "http://0.0.0.0:4000"
 #baseurl: ""
