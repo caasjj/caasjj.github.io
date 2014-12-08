@@ -36,8 +36,16 @@ paginate_path: "blog/page:num"
 # Use the empty strings for testing with 'jekyll serve'
 #
 ###############################################################################
+<<<<<<< HEAD
+#url: ""
+#baseurl: ""
+url: "http://caasjj.github.io"
+=======
 url: ""
+>>>>>>> journal
 baseurl: ""
+#url: "caasjj.github.io"
+#baseurl: ""
 #url: "http://0.0.0.0:4000"
 #baseurl: ""
 #url: "http://192.168.200.8"
@@ -57,8 +65,8 @@ markdown: kramdown
 # Additional plugins for extra features, like creating a sitemap
 #
 ###############################################################################
-#gems:
-#- jekyll-sitemap
+gems:
+  - jekyll-sitemap
 
 # Defaults
 ###############################################################################
