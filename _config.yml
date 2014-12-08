@@ -1,0 +1,85 @@
+# Site settings - personalization
+##############################################################################
+#
+# Use the following settings for use with 'jekyll serve'
+#
+##############################################################################
+title: journal
+email: caasjj@gmail.com
+description: >    # '>' means ignore newlines until next item
+   //
+twitter_username: caasjj
+github_username:  caasjj
+bitbucket_username:  caasjj
+linkedin_username: walidhosseini
+
+# Pagination
+##############################################################################
+#
+# We use these settings not only for creating the actual pagination pages
+# but also to fetch them via ajax in the whWebSite.postLoader in app.js
+# Unfortunately, the 'paginate_path' was not used there and the path has
+# (for now) been hardcoded to '/page:num'.  Changing it here without updating
+# the Javascript will break the pagination.
+#
+###############################################################################
+paginate: 6
+paginate_path: "blog/page:num"
+
+# Build settings
+##############################################################################
+#
+# Use the following settings for deploying to Apache at protocol/domain
+# 'http://dev' in sub-directory 'walidhosseini.io/_site' for a base url
+# to 'index.html' of 'http://dev/walidhosseini.io/_site/index.html'
+#
+# Use the empty strings for testing with 'jekyll serve'
+#
+###############################################################################
+#url: ""
+#baseurl: ""
+url: "caasjj.github.io"
+baseurl: ""
+#url: "http://0.0.0.0:4000"
+#baseurl: ""
+#url: "http://192.168.200.8"
+#baseurl: "/walidhosseini.io/_site"
+
+# Additional Settings
+##############################################################################
+#
+# Use 'karmdown' as the markdown processor
+#
+###############################################################################
+markdown: kramdown
+
+# Plugins
+##############################################################################
+#
+# Additional plugins for extra features, like creating a sitemap
+#
+###############################################################################
+gems:
+  - jekyll-sitemap
+
+# Defaults
+###############################################################################
+#
+# Set default values for DRY items
+#
+###############################################################################
+defaults:
+-
+  scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "post"
+    categories: ["journal"]
+    
+-
+  scope:
+    path: ""
+    type: "pages"
+  values:
+    layout: "default-layout"

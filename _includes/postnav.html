@@ -1,0 +1,12 @@
+<div class="row collapse post-navigation">
+  <div class="columns small-4 medium-2 post-nav-previous">
+    {% if page.previous %}
+    <a class="arrow-previous" href="{{ page.previous.url }}"> <span class="fa fa-chevron-left"></span><span class="fa fa-chevron-left"></span> Older</a>
+    {% endif %}
+  </div>
+  <div class="columns small-4 medium-2 post-nav-next">
+    {% if page.next %}
+    <a class="arrow-next offset-11" href="{{ page.next.url }}">Newer <span class="fa fa-chevron-right"></span><span class="fa fa-chevron-right"></span> </a>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,390 @@
+/****************************************************************
+*
+* HTML
+*
+* Generic classes
+*****************************************************************/
+
+body {
+  background-color: $silver;
+  min-height: 100vh;
+}
+
+.removed {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hrule {
+  position: relative;
+  height: 1px;
+  background-color: $iron;
+  margin: 3em 0;
+  &:after {
+    font-family: allerta;
+    content: "// W H ";
+    font-size: 50%;
+    text-align: center;
+    color: $iron;
+    position: absolute;
+    top: -2em;
+    left: 48%;
+    background: $silver;
+    padding: 0.75em 0.5em;
+  }
+}
+
+.#{$fa-css-prefix}-spin {
+  -webkit-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
+}
+
+.spinner {
+  position: fixed;
+  //left: rem-calc(50vw) - 1.5rem;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color: $primary-color;
+}
+
+table {
+  border-spacing: 0;
+  tbody tr {
+    th {
+      background-color: $tuatara;
+      color: $snow;
+      line-height: 1.5rem;
+    }
+    td {
+      line-height: 1.25rem;
+    }
+  }
+}
+
+/****************************************************************
+*
+* page-xxx classes
+*
+* Generic styling for all pages
+*****************************************************************/
+.page-heading {
+  font-family: "montserratregular", "muli", arial, sans-serif;
+  line-height: 2em;
+}
+
+/****************************************************************
+*
+* xyz-page classes
+*
+* Customization for page xyz
+*****************************************************************/
+.blog {
+
+}
+
+.blog-paginator {
+  @include pagination;
+  margin-top: 2em;
+  font-family: "muli-lightitalic";
+  .arrow {
+    //border: 1px solid $iron;
+    &.unavailable {
+      // border: 1px solid $silver;
+    }
+    .fa {
+      font-size: 75%;
+    }
+  }
+}
+
+.about-page {
+  height: 50vh;
+}
+
+/****************************************************************
+*
+* post-xxx classes used in blog.html to list summary of posts
+*
+* Used in index.html to list summary of posts
+*****************************************************************/
+.post {
+
+}
+
+.post-header {
+
+}
+
+.post-title {
+
+}
+
+.post-link {
+  display: inline-block;
+  font-size: $h3-font-size;
+  // line-height: 0.65em;
+  margin-top: 0.75em;
+}
+
+.post-meta {
+  font-size: $h3-font-size * 0.5;
+  color: $subheader-font-color;
+  font-weight: $subheader-font-weight;
+}
+
+.post-content {
+
+}
+
+.post-excerpt {
+  height: #{3 * $paragraph-line-height}em;
+  overflow: hidden;
+}
+
+.post-navigation {
+  &.row.collapse {
+    margin-top: 10px;
+  }
+  .post-nav-previous {
+    font-family: 'allerta';
+    text-align: left;
+    //margin-left: 1em;
+  }
+
+  .post-nav-next {
+    font-family: 'allerta';
+    text-align: right;
+    //margin-right: 1em;
+  }
+}
+
+.post-share-social {
+  position: relative;
+  border-radius: $global-radius * 2;
+  font-size: 150%;
+  .post-share-social-icons {
+    position: absolute;
+    bottom: 0;
+    a {
+      margin: 0.25em;
+    }
+  }
+  &:before {
+    font-size: 66%;
+    font-family: 'allerta';
+    color: $aluminum;
+    content: 'Share this post';
+  }
+
+  height: 3em;
+  margin-bottom: 1em;
+
+}
+
+/****************************************************************
+*
+* Site Header
+*
+* Used in header-foundation.html to display the parallax banner
+*****************************************************************/
+section.site-banner {
+  h1, h2, h3, h4 {
+    font-family: "muli-light";
+    color: white;
+  }
+  h5, h6 {
+    font-family: "muli-lightitalic";
+    color: white;
+  }
+}
+
+/****************************************************************
+*
+* Site Navigation
+*
+* Used in topbar and other navigation elements
+*****************************************************************/
+
+/****************************************************************
+*
+* Syntax Highlighter
+*
+*
+*****************************************************************/
+.post code {
+  background-color: scale_color($info-color, $lightness: 80%);
+  padding: 1px 5px;
+}
+
+.highlight {
+  margin-bottom: 2rem;
+  box-shadow: -1px -1px 5px 1px $base;
+  pre {
+    padding: 1em;
+  }
+}
+
+.post {
+  pre, code {
+    font-family: 'Oxygen Mono', Courier;
+    font-size: 0.75rem;
+    border: 1px solid #d5d5e9;
+    background-color: scale-color($info-color, $lightness: 95%);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow: scroll;
+  }
+}
+
+.post pre {
+  code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/****************************************************************
+*
+* Footer
+*
+* Used in footer-foundation.html to display the footer on all
+* pages.
+*****************************************************************/
+.site-footer {
+  height: 50vh;
+  background-color: $oil;
+  li {
+    list-style: none;
+  }
+  .copyright {
+    color: $monsoon;
+    font-size: 0.75em;
+  }
+}
+
+/****************************************************************
+*
+* Web icons
+*
+*****************************************************************/
+.webicon {
+  opacity: 0.85;
+  display: inline-block;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  text-indent: -999em;
+  text-align: left;
+  -moz-box-shadow: 0 2px 0 rgba(64, 64, 64, 0.5);
+  -webkit-box-shadow: 0 2px 0 rgba(64, 64, 64, 0.5);
+  box-shadow: 0 2px 0 rgba(64, 64, 64, 0.5);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 2px;
+  transition: transform 0.05s;
+  &.large {
+    width: 48px;
+    height: 48px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+  }
+
+  &.small {
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+.svg {
+  .webicon {
+    &.linkedin {
+      background: url("../assets/webicons/webicon-linkedin.svg");
+    }
+    &.twitter {
+      background: url("../assets/webicons/webicon-twitter.svg");
+    }
+    &.github {
+      background: url("../assets/webicons/webicon-github.svg");
+    }
+    &.mail {
+      background: url("../assets/webicons/webicon-mail.svg");
+    }
+    &.bitbucket {
+      background: url("../assets/webicons/webicon-bitbucket.svg");
+    }
+  }
+}
+
+.no-svg {
+  .webicon {
+    &.linkedin {
+      background: url("../assets/webicons/webicon-linkedin-m.png");
+    }
+    &.twitter {
+      background: url("../assets/webicons/webicon-twitter-m.png");
+    }
+    &.github {
+      background: url("../assets/webicons/webicon-github-m.png");
+    }
+    &.bitbucket {
+      background: url("../assets/webicons/webicon-bitbucket-m.png");
+    }
+    &.mail {
+      background: url("../assets/webicons/webicon-mail-m.png");
+    }
+
+    &.small {
+      &.linkedin {
+        background: url("../assets/webicons/webicon-linkedin-s.png");
+      }
+      &.twitter {
+        background: url("../assets/webicons/webicon-twitter-s.png");
+      }
+      &.github {
+        background: url("../assets/webicons/webicon-github-s.png");
+      }
+      &.bitbucket {
+        background: url("../assets/webicons/webicon-bitbucket-s.png");
+      }
+      &.mail {
+        background: url("../assets/webicons/webicon-mail-s.png");
+      }
+    }
+
+    &.large {
+      &.linkedin {
+        background: url("../assets/webicons/webicon-linkedin.png");
+      }
+      &.twitter {
+        background: url("../assets/webicons/webicon-twitter.png");
+      }
+      &.github {
+        background: url("../assets/webicons/webicon-github.png");
+      }
+      &.bitbucket {
+        background: url("../assets/webicons/webicon-bitbucket.png");
+      }
+      &.mail {
+        background: url("../assets/webicons/webicon-mail.png");
+      }
+    }
+  }
+}

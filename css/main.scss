@@ -1,0 +1,12 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+$fa-font-path:        "../assets/fonts" !default;
+@import "fonts";
+@import "settings";
+@import "foundation";
+@import "main-header";
+@import "style";
+@import "syntax-highlighting";
+
+@charset "utf-8";

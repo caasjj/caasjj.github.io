@@ -1,0 +1,84 @@
+// ../fonts
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+@import '../assets/fonts/font-awesome/scss/font-awesome.scss';
+@font-face {
+  font-family: 'allerta';
+  src: url('../assets/fonts/project/allerta/allerta-regular-webfont.eot');
+  src: url('../assets/fonts/project/allerta/allerta-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/project/allerta/allerta-regular-webfont.woff') format('woff'),
+  url('../assets/fonts/project/allerta/allerta-regular-webfont.ttf') format('truetype'),
+  url('../assets/fonts/project/allerta/allerta-regular-webfont.svg#allertaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'muli-light';
+  src: url('../assets/fonts/project/muli/muli-light-webfont.eot');
+  src: url('../assets/fonts/project/muli/muli-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/project/muli/muli-light-webfont.woff') format('woff'),
+  url('../assets/fonts/project/muli/muli-light-webfont.ttf') format('truetype'),
+  url('../assets/fonts/project/muli/muli-light-webfont.svg#mulilight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'muli';
+  src: url('../assets/fonts/project/muli/muli-regular-webfont.eot');
+  src: url('../assets/fonts/project/muli/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/project/muli/muli-regular-webfont.woff') format('woff'),
+  url('../assets/fonts/project/muli/muli-regular-webfont.ttf') format('truetype'),
+  url('../assets/fonts/project/muli/muli-regular-webfont.svg#muliregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'muli-lightitalic';
+  src: url('../assets/fonts/project/muli/muli-lightitalic-webfont.eot');
+  src: url('../assets/fonts/project/muli/muli-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/project/muli/muli-lightitalic-webfont.woff') format('woff'),
+  url('../assets/fonts/project/muli/muli-lightitalic-webfont.ttf') format('truetype'),
+  url('../assets/fonts/project/muli/muli-lightitalic-webfont.svg#muliregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'playfair';
+  src: url('../assets/fonts/project/playfair/playfairdisplay-regular-webfont.eot');
+  src: url('../assets/fonts/project/playfair/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/project/playfair/playfairdisplay-regular-webfont.woff') format('woff'),
+  url('../assets/fonts/project/playfair/playfairdisplay-regular-webfont.ttf') format('truetype'),
+  url('../assets/fonts/project/playfair/playfairdisplay-regular-webfont.svg#playfairregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url('../assets/fonts/project/montserrat/Montserrat-Regular-webfont.eot');
+  src: url('../assets/fonts/project/montserrat/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/project/montserrat/Montserrat-Regular-webfont.woff') format('woff'),
+  url('../assets/fonts/project/montserrat/Montserrat-Regular-webfont.ttf') format('truetype'),
+  url('../assets/fonts/project/montserrat/Montserrat-Regular-webfont.svg#montserratregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url('../assets/fonts/project/montserrat/Montserrat-Bold-webfont.eot');
+  src: url('../assets/fonts/project/montserrat/Montserrat-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/project/montserrat/Montserrat-Bold-webfont.woff') format('woff'),
+  url('../assets/fonts/project/montserrat/Montserrat-Bold-webfont.ttf') format('truetype'),
+  url('../assets/fonts/project/montserrat/Montserrat-Bold-webfont.svg#montserratbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

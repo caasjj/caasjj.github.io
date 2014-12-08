@@ -1,0 +1,116 @@
+// get rid of scrollbar
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar; /*auto | none | scrollbar | -ms-autohiding-scrollbar*/
+}
+
+// parallax
+.parallax {
+  perspective: 200px;
+  -ms-perspective: 200px;
+  -moz-perspective: 200px;
+  -webkit-perspective: 200px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 115vh;
+    top: 0%;
+
+    &::after {
+      background: url("../assets/img/phostorm.png") no-repeat;
+      background-size: cover;
+      content: "";
+      opacity: 0.8;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .foreground {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    top: 60%;
+
+    .contacts {
+      display: inline-block;
+      position: relative;
+      width: 80%;
+      top: 70vh;
+      left: 0;
+      bottom: 0;
+      .photo {
+        position: absolute;
+        border-radius: 50%;
+        background-size: cover;
+        &:first-child {
+          height: 125px;
+          width: 125px;
+          background-image: url("../assets/img/IMG_0309.JPG");
+          margin-top: -4em;
+          background-position: -30px;
+        }
+        &:nth-child(2) {
+          height: 125px;
+          width: 125px;
+          background-image: url("../assets/img/IMG_0243.JPG");
+          margin-top: -2em;
+          margin-left: 6em;
+          background-position: -10px;
+        }
+      }
+      .social-logos {
+        position: absolute;
+        left: 40%;
+      }
+    }
+  }
+}
+
+.parallax-block {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.parallax-layer {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  &.base {
+    transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+  &.back {
+    transform: translateZ(-100px) scale(1.5);
+    -ms-transform: translateZ(-100px) scale(1.5);
+    -moz-transform: translateZ(-100px) scale(1.5);
+    -webkit-transform: translateZ(-100px) scale(1.5);
+  }
+}
+
+.home-intro {
+  position: relative;
+  background: url("../assets/img/use_your_illusion_@2x.png");
+  //background: url("../assets/img/stressed_linen_@2x.png");
+}

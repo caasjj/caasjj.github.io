@@ -1,0 +1,42 @@
+{% if paginator.total_pages > 1 %}
+<ul class="blog-paginator" data-baseurl="{{ site.baseurl }}" data-url="{{ site.url }}"
+    data-paginate-path="{{ site.paginate_path }}">
+
+  <li class="arrow unavailable">
+    <a class="paginator-step-page newer"
+       href="#"> <span class="fa fa-chevron-left"></span><span class="fa fa-chevron-left"></span> Newer</a>
+  </li>
+  {% for page in (1..paginator.total_pages) %}
+  <li>
+    <a class="paginator-get-page" id="page{{ page }}"
+       href="#/page{{ page }}">
+      {{ page }}
+    </a>
+  </li>
+  {% endfor %}
+  <li class="arrow">
+    <a class="paginator-step-page older"
+       href="#">Older <span class="fa fa-chevron-right"></span><span class="fa fa-chevron-right"></span></a>
+  </li>
+</ul>
+{% endif %}
+</h1>
+
+<section class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h3>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+      <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+    </h3>
+    <div class="post-excerpt"> {{ post.excerpt }}</div>
+    <div class="hrule"></div>
+  </article>
+  {% endfor %}
+</section>
+
+<div class="spinner fa fa-spin removed">
+  <span class="fa fa-circle-o-notch"></span>
+</div>
+<!--<div class="fa fa-spinner fa-spin spinner removedNOT"></div>-->

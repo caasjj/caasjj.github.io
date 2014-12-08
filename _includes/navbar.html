@@ -1,0 +1,52 @@
+<div class="sticky">
+  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="{{ site.url }}{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!--Left Nav Section-->
+      <ul class="left">
+        <li><a href="{{ site.url }}{{ site.baseurl }}/blog/">Blog</a></li>
+        <!--<li><a href="{{ site.url }}{{ site.baseurl }}/portfolio/">Portfolio</a></li>-->
+
+        <li class="has-dropdown">
+          <a href="#">Portfolio</a>
+          <ul class="dropdown">
+            <li><a href="#">Photograrphy</a></li>
+            <li><a href="#">Web Development</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a href="#">Tutorials</a>
+          <ul class="dropdown">
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">Electronics</a></li>
+          </ul>
+        </li>
+
+
+        <li><a href="{{ site.url }}{{ site.baseurl }}/tutorials/">Projects</a></li>
+        <li><a href="{{ site.url }}{{ site.baseurl }}/writing/">Writing</a></li>
+      </ul>
+      <ul class="right">
+        <li><a href="{{ site.url }}{{ site.baseurl }}/about/">About</a></li>
+        <li>
+          <div class="small-12 columns">
+            <input data-tooltip aria-haspopup="true" type="text" class="has-tip tip-bottom topbar-search radius"
+                   placeholder="search ..." title="Search not implemented">
+            </span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </nav>
+</div>
