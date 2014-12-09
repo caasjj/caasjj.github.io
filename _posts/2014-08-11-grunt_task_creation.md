@@ -2,8 +2,7 @@
 layout: post
 title:  "Creating Grunt Tasks"
 date: Mon August 11, 2014 3:36 PM
-categories: journal
-
+category: blog
 ---
 
 This article reviews in detail how to create, configure, register and launch tasks in grunt.
