@@ -1,6 +1,7 @@
 ---
 title: Sails Config, Hooks, Policies and Services
 date: Tue Oct 21, 2014 11:59 AM
+tag: sails, sailsjs, javascript
 ---
 
 Once you get past the basics of SailsJS, you find an opinionated but very flexible (and well designed!) environment to implement feature rich apps.  In this article, we cover some of the slightly more advanced architectural topics in Sails, consisting of app configuration, hooks, policies and services.

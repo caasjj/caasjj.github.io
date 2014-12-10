@@ -5,6 +5,16 @@ layout: page
   <div class="columns">
     <section id="essays">
       <p>Projects Coming soon ...</p>
+      {% for category in site.categories %}
+        <p>{{  category | first }} </p>
+      {% endfor %}
+
+      {% for tag in site.tags %}
+      <a href="/{{ tag | first | slugize }}/">
+        {{ tag | first }}
+      </a>
+      {% endfor %}
+
     </section>
   </div>
 </div>
