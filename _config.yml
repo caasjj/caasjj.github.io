@@ -7,7 +7,7 @@
 title: // WH
 email: caasjj@gmail.com
 description: >    # '>' means ignore newlines until next item
-   //
+   Making, thinking and living in the 21st century.
 twitter_username: caasjj
 github_username:  caasjj
 bitbucket_username:  caasjj
@@ -37,7 +37,6 @@ paginate_path: "blog/page:num"
 #
 ###############################################################################
 #url: ""
-#baseurl: ""
 url: "http://caasjj.github.io"
 baseurl: ""
 #url: "http://0.0.0.0:4000"
