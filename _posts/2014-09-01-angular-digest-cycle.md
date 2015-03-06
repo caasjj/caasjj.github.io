@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Angular Digest Cycle"
-date: Tue September 1, 9:42 AM
+date: Tue September 1, 2014 9:42 AM
 categories: journal
 ---
 

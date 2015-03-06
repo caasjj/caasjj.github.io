@@ -1,5 +1,6 @@
 _site
 .sass-cache
+.idea/
 Gemfile.lock
 *-private.md
 *-journal-entry.md

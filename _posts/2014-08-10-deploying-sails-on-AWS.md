@@ -40,3 +40,43 @@ categories: journal
    
 > Spent some time sudying Git deployment on AWS. Turns out, it's fairly straight forward but requires a bunch of things to set up.
 I set up an RDS (Relational Database Service), and a DevOps stack.  You can configure a database and associated security rules through RDS, and then a 'stack' through DevOps to use Layers (EC2, RDS, etc), and then instantiate apps to use these various layers. I was able to create a database and access it through my local machine, as well as instantiate a Node.js app server but did not actually install an app.  You can install an app vis Git/Subversion source control.  The node.js app by default has to be called `server.js` and listen on `port 80`.  I don't know how to remap these and did not want to bother figuring out - not worth the time at this point.  So, I will stick to manual/rsync deployment for now.
+
+### Managing EC2 Instances with AWS CLI
+
+All parameters written as `< .. >` are variables from the actual instances obtained from the AWS Management Console.  Parameters written as `[ .. ]` are to be supplied by the user.
+
+Go to a AWS IAM console for a given regional group:
+
+* [us-west-2](https://console.aws.amazon.com/iam/home?region=us-west-2#home)
+* [us-west-1](https://console.aws.amazon.com/iam/home?region=us-west-1#home)
+
+Create *Groups*, *Users* and *Roles*.  Attach policies to *Groups* and assign *Users* to *Groups* as neeeded. (Details outside this scope!).  
+
+When creating a *User*, be sure to check `Generate an access key for each user`, and on the next page `Download Credentials` and store it to a `.csv` file in a secure location (currently in the encrypted volume `/Users/developer/Documents/crypt.dmg`).
+
+Go to a AWS console for a given regional group:
+
+* [us-west-1](https://console.aws.amazon.com/ec2/v2/home?region=us-west-1#)
+* [us-west-2](https://console.aws.amazon.com/ec2/v2/home?region=us-west-2#)
+
+Create and launch EC2 instance, noting the `<Instance ID>`.
+
+<sub>At the time of this writing, there is a `t1.micro` running in `us-west-2` region, and user `caasjj` has the credentials to start/stop the instance.<sub>
+
+Configure the CLI tool with `cli configure --profile [user]` and copy/paste the `Access Key Id` and `Secret Access Key` in response to the prompts.  Now, you can issue commands on the `CLI` using `--profile [user]`. If you do not issue a `--profile`, then the main admin user `whosseini` (who has a password and can log in to AWS console and is a member of `Administrators`) will be used. 
+
+Adding a user to `developer` group (already defined as of this writing) should allow the user to start/stop `EC2` instances.
+
+##### CLI Commands
+* Creating a Security Group: `aws ec2 create-security-group --[dummySecurity] --description ["A dummy security group"]`
+* Starting an existing Instance: `aws ec2 start-instances --instance-ids i-<54fe9758>`
+* Stopping an Instance: `aws ec2 stop-instances --instance-ids i-<54fe9758>`
+
+##### Questions
+> Important <br> - for actual deployment, read up on `Elastic Beanstalk`. 
+
+* Read up a bit more on `VPC` [Virtual Private Cloud](https://us-west-2.console.aws.amazon.com/vpc/home?region=us-west-2#) (link is for us-west-2)
+* Read up on security groups and IP ranges .. ??
+
+
+

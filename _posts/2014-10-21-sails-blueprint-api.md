@@ -442,7 +442,7 @@ Given a model file `SomeModel.js`, and an associated *empty* controller `SomeMod
   </tr>
     <tr>
     <td>
-     -
+     remove
     </td>
     <td>
     id
@@ -474,7 +474,7 @@ Given a model file `SomeModel.js`, and an associated *empty* controller `SomeMod
 
     <tr>
     <td>
-     -
+     add
     </td>
     <td>
     id

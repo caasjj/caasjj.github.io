@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Angular Dependency Injection and Bootstrapping"
-date: Mon August 31, 7:05 PM
+date: Mon August 31, 2014 7:05 PM
 categories: journal
 ---
 

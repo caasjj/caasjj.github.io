@@ -1,6 +1,6 @@
 ---
 title:  "Regular Expressions"
-date: Monday September 29, 2014, 7:45 AM AM/PM
+date: Monday September 29, 2014 7:45 AM AM/PM
 categories: journal
 ---     
 

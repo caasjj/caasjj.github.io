@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'ngRoute - Angular Router'
-date: Fri September 19, 2:52 PM
+date: Fri September 19, 2014 2:52 PM
 categories: journal
 ---     
 

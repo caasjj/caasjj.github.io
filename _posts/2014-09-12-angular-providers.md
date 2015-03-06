@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Angular Providers"
-date: Fri September 12, 7:59 AM
+date: Fri September 12, 2014 7:59 AM
 categories: journal
 ---
 

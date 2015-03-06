@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Angular with Foundation and Gulp"
-date: Thu September 11, 3:44 PM
+date: Thu September 11, 2014 3:44 PM
 categories: journal
 ---
 

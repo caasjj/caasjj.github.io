@@ -7,7 +7,7 @@
 title: // WH
 email: caasjj@gmail.com
 description: >    # '>' means ignore newlines until next item
-   Making, thinking and living in the 21st century.
+
 twitter_username: caasjj
 github_username:  caasjj
 bitbucket_username:  caasjj
@@ -36,13 +36,14 @@ paginate_path: "blog/page:num"
 # Use the empty strings for testing with 'jekyll serve'
 #
 ###############################################################################
-#url: ""
+baseUrl: ""
 url: "http://caasjj.github.io"
-baseurl: ""
+#baseurl: ""
 #url: "http://0.0.0.0:4000"
 #baseurl: ""
-#url: "http://192.168.200.8"
-#baseurl: "/walidhosseini.io/_site"
+#url: "http://192.168.200.13"
+#url: "http://localhost"
+#baseurl: "/walidhosseini.journal/_site"
 
 # Additional Settings
 ##############################################################################

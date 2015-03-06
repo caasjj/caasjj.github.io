@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Publishing a Bower Package"
-date: Thu September 11, 10:14 PM
+date: Thu September 11, 2014 10:14 PM
 categories: journal
 ---
 

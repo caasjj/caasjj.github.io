@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Angular Animations with CSS3"
-date: Wed September 2, 8:33 AM
+date: Wed September 2, 2014 8:33 AM
 categories: journal
 ---
 
