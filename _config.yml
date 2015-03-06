@@ -37,7 +37,7 @@ paginate_path: "blog/page:num"
 #
 ###############################################################################
 baseUrl: ""
-url: "http://caasjj.github.io"
+url: "http://walidhosseini.com"
 #baseurl: ""
 #url: "http://0.0.0.0:4000"
 #baseurl: ""
